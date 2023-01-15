@@ -1,11 +1,6 @@
 name: terraform-destroy
 on:
-  repository_dispatch:
-    types: [terraform-destroy]
-
-permissions:
-  id-token: write
-  contents: read
+  workflow_dispatch:
 
 jobs:
   terraform:
