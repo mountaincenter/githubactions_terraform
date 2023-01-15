@@ -1,6 +1,10 @@
 name: terraform apply test by OIDC
 
-on: [push]
+on:
+  push: branches:
+    - main
+  pull_request:
+
 permissions:
   id-token: write
   contents: read

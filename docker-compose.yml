@@ -9,3 +9,12 @@ services:
     working_dir: /terraform
     entrypoint: ash
     tty: true
+  front:
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/usr/src/app
+    command: sh -c "yarn start"
+    ports:
+      -  "3000:3000"

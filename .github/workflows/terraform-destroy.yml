@@ -32,7 +32,7 @@ jobs:
           terraform_version: 1.3.7
 
       - name: Terraform Init
-        working_directory: ./terraform
+        working-directory: ./terraform
         run: terraform init
 
 
