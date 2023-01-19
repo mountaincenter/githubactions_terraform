@@ -3,8 +3,7 @@ name: terraform apply
 on:
   push:
     branches:
-    - main
-  pull_request:
+    - master
 
 permissions:
   id-token: write
