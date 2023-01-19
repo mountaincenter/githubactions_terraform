@@ -1,4 +1,4 @@
-name: terraform apply test by OIDC
+name: terraform apply
 
 on:
   push:
