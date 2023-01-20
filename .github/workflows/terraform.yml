@@ -31,7 +31,7 @@ jobs:
       - name: Terraform fmt
         id: fmt
         working-directory: ./terraform
-        run: terraform fmt -check
+        run: terraform fmt -check -recursive
         continue-on-error: true
 
       - name: Terraform Init
