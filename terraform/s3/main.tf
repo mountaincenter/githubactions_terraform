@@ -25,9 +25,8 @@ resource "aws_s3_bucket" "web" {
 resource "aws_s3_object" "main" {
   bucket       = aws_s3_bucket.web.id
   key          = "index.html"
-  source       = "/terraform/index.html"
+  source       = "/index.html"
   content_type = "text/html"
-  etag         = filemd5("/githubactions_terraform/index.html")
 }
 
 resource "aws_s3_bucket_policy" "main" {
